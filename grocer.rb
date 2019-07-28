@@ -43,7 +43,7 @@ end
 
   
   
-  def apply_coupons(cart, coupons)
+def apply_coupons(cart, coupons)
 
     cart_with_coupons = cart
     i = 0
