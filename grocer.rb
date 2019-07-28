@@ -51,7 +51,7 @@ def apply_coupons(cart, coupons)
   coupon_list = {}
   cart.each {|key, value|
   counter = 0 
-  
+  if coupons[:item] > 0 do 
   while coupons[counter] do
     if (coupons[counter][:item] == key) && (coupons[counter][:num]) <= newhash[key][:count]
       
