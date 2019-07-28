@@ -121,5 +121,5 @@ end
 
 
 def checkout(cart, coupons)
-  def consolidate_cart()
+  
 end
