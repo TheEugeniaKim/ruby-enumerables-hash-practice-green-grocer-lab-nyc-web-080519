@@ -47,6 +47,7 @@ def apply_coupons(cart, coupons)
 
     cart_with_coupons = cart
     i = 0
+    
     while i < coupons.length do
       use_coupon = nil
       coupons_clearance = nil
