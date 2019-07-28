@@ -114,7 +114,7 @@ end
 def apply_clearance(cart)
  cart.each do |key, value|
    if cart[key][:clearance] == true 
-     
+     price[cart][:key]
  
  
 end
