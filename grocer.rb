@@ -113,6 +113,7 @@ end
 
 def apply_clearance(cart)
  if cart[:clearance] = true 
+   cart[:price] = 
 end
 
 
