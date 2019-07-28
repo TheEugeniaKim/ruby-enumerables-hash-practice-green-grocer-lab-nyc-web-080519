@@ -78,28 +78,6 @@ end
 
 
 
-# def apply_coupons(cart, coupons)
-#   newhash = cart 
-#   coupon_list = {}
-#   cart.each {|key, value|
-#   i = 0 
-  
-#   while i < coupons.length do
-#     if (coupons[counter][:item] == key) && (coupons[counter][:num]) <= newhash[key][:count]
-      
-#       newhash[key][:count] -= coupons[counter][:num] 
-      
-#       if coupon_list["#{key} W/ COUPON"]
-#           coupon_list["#{key} W/ COUPON"][:count] += coupons[counter][:num]
-#       else 
-#         coupon_list["#{key} W/ COUPON"] = {:price => coupons[counter][:cost]/coupons[counter][:num], :clearance => newhash[key][:clearance], :count => coupons[counter][:num]}
-#       end
-#     end
-#     counter += 1 
-#   end
-#   }
-#   newhash.merge(coupon_list)
-# end
 
 
 
@@ -133,4 +111,3 @@ end
   
   
   
-end
