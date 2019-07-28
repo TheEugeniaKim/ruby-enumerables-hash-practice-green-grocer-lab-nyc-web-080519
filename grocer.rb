@@ -121,14 +121,11 @@ end
 
 
 def checkout(cart, coupons)
-  final = 0 
-  cart1 = consolidate_cart(cart)
-  cart2 = apply_coupons(cart1, coupons)
-  cart3 = apply_clearance(cart2)
-  cart3.each{ |key, value| sum += (cart3[key][:price]*cart3[key][:count])
-  }
-  return sum
-end
+  final_cart = apply_clearance(apply_coupons(consolidate_cart(cart), coupons))
+  total = 0
+  final_cart.each do |key, value|
+    total += final_cart[key][:price]*final_cart[key][:count]
+  end
 end 
   
   
