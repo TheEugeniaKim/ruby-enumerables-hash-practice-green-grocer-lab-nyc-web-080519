@@ -56,6 +56,7 @@ def apply_coupons(cart, coupons)
       coupons_item = coupons_hash[:item]
       coupons_num = coupons_hash[:num]
       item_count = nil
+      
       cart.each do |key, value|
           item_count = cart_with_coupons[key][:count]
           if coupons_item == key && cart_with_coupons[key][:count] >= coupons_num
