@@ -126,7 +126,7 @@ def checkout(cart, coupons)
   final_cart.each do |key, value|
     total += final_cart[key][:price]*final_cart[key][:count]
   end
-  p total > 1000? (total *= 0.9).round(2) : total
+  p total > 100? (total *= 0.9).round(2) : total
 end 
   
   
